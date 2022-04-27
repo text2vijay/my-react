@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import ClassEnzymeCounter from "./enzyme/RangeCounterClass";
+import ClassRtlCounter from "./rtl/RangeCounterFunctional";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ClassEnzymeCounter min={0} max={8} />
+      <br />
+      <br />
+      <ClassRtlCounter min={0} max={10}></ClassRtlCounter>
     </div>
   );
 }
